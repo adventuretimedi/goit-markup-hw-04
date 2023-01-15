@@ -105,7 +105,7 @@ header {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
@@ -164,9 +164,7 @@ margin-left: 50px;
 .phone:hover,
 .phone:focus,
 .mail:focus,
-.mail:hover,
-.location:focus,
-.location:hover {
+.mail:hover {
   color: var(--accent-color);
 }
 
@@ -350,7 +348,7 @@ background-color: var(--background-grey-buttons);
   margin-bottom: 16px;
 }
 
-/* .social-links {
+.social-links {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -377,7 +375,7 @@ background-color: var(--background-grey-buttons);
   width: 44px;
   height: 44px;
   overflow: visible;
-} */
+}
 /* ---------------------------------------P O R T F O L I O ---------------------------------------*/
 
 .button {
@@ -435,10 +433,12 @@ background-color: var(--background-grey-buttons);
   margin-bottom: 4px;
 }
 
-.project-text-block{
-  padding: 20px 24px;
-}
+.project-text-block {
 
+  border: 1px solid var(--portfolio-cards-border);
+  padding: 20px 24px;
+  border-top: none;
+}
 /* --------------------------------------Footer--------------------------------------------------- */
 
 .footer {
