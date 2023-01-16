@@ -92,15 +92,21 @@ header {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+/* .link:hover .mail-icon-header ,
+.link:focus .phone-icon-geader {
   color: var(--accent-color);
-}
+  fill: var(--accent-color);
+} */
 
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
+
+/* .mail-icon-header,
+.phone-icon-header {
+
+} */
 /* -------------------------------------------Logo general------------------------------------------------ */
 .logo {
   font-family: Raleway;
@@ -167,8 +173,14 @@ margin-left: 50px;
 .mail:focus,
 .mail:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
+.mail-icon-header,
+.phone-icon-header {
+  Width: 16px;
+  Height: 12px;
+}
 /* ----------------------------------------- hero---------------------------------------------------- */
 
 .hero {
@@ -351,7 +363,8 @@ background-color: var(--background-grey-buttons);
 .person-card {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px;   */ 
+  /* перенесла в ul social-links */
 }
 
 .person-name {
@@ -367,61 +380,82 @@ background-color: var(--background-grey-buttons);
 }
 
 .social-links {
+
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 10px;
-  padding-inline-start: 0px;
+
+  padding: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
 }
 
-.social-link-item {
+.social-link-list {
   width: 44px;
-    height: 44px;
+  height: 44px;
+
 }
 
 .social-link {
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: flex;
+  
   align-items: center;
   justify-content: center;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover .social-icon ,
+.social-link:focus .social-icon {
   background-color: var(--accent-color);
   fill: var(--basic-white);
+ 
+}
+
+.social-link:hover ,
+.social-link:focus  {
+  background-color: var(--accent-color);
+  
+
 }
 .social-icon {
+  margin: 15px;
   width: 20px;
   height: 20px;
   fill: var(--icon-grey);
 
 }
 
-.social-icon:hover,
-.socoal-icon:focus {
-  fill: #ffffff;
-}
 
 /* --------------------------------------Section clients------------------------------ */
+ 
+.client-list {
+  display: flex;
+  gap: 30px;
+  
+}
 
-.test-box {
+.client-box{
   width: 170px;
   height: 92px;
   display: flex;
 
-  
   border: 1px solid #AFB1B8;
+  border-radius: 4%;
 }
 
-.test-box:hover,
-.test-box:focus {
+.client-box:hover,
+.client-box:focus {
   border: 1px solid var(--accent-color);
 }
 
+
 .client-icon {
   fill: var(--icon-grey);
+
 }
 
 .client-icon:hover,
