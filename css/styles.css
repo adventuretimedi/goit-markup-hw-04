@@ -8,7 +8,7 @@
   --background-grey: #2f303a;
   --header-border-grey: #ECECEC;
   --portfolio-cards-border: #EEEEEE;
-  --icon-grey: #AFB1B8;
+  --icon-white: rgba(255, 255, 255, 1);
   --footer-contacts-soft-grey: rgba(255, 255, 255, 0.6);
   --hero-gradient: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
@@ -97,6 +97,10 @@ header {
   letter-spacing: 0.02em;
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
 
 .site-nav .link.current {
   color: var(--accent-color);
@@ -148,7 +152,7 @@ header {
 }
 
 .head-contacts .item+.item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .phone,
@@ -211,7 +215,6 @@ header {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
   margin: auto;
 
 }
@@ -452,6 +455,7 @@ img {
 /* --------------------------------------Section clients------------------------------ */
 
 .client-list {
+  padding: 0;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -639,7 +643,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   font-size: 14px;
-  line-height: 0.42;
+  line-height: 1.17;
 }
 
 .ul-list {
@@ -699,7 +703,7 @@ img {
   align-items: center;
   width: 20px;
   height: 20px;
-  fill: var(--icon-grey);
+  fill: var(--icon-white);
 
   transition-property: fill;
   transition-duration: 250ms;
