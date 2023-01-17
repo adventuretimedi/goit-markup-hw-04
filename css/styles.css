@@ -9,6 +9,7 @@
   --header-border-grey: #ECECEC;
   --portfolio-cards-border: #EEEEEE;
   --icon-white: rgba(255, 255, 255, 1);
+  --icon-grey: rgba(175, 177, 184, 1);
   --footer-contacts-soft-grey: rgba(255, 255, 255, 0.6);
   --hero-gradient: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
@@ -478,7 +479,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  border: 1px solid var(--client-box-border);
+  border: 1px solid var(--icon-grey);
   border-radius: 4%;
 
   transition-property: border;
